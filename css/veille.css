@@ -1,0 +1,142 @@
+hr {
+    width: 300px;
+    height: 5px;
+    background-color: #7060a5;
+    border: none;
+    border-radius: 1em;
+}
+
+.border {
+    padding: 0 40px 10px 40px;
+    border-right: 5px solid #7060a5 ;
+    border-bottom: 5px solid #7060a5;
+    border-left: 5px solid #7060a5;
+    border-top: none;
+    border-radius: 3px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 0 50px;
+}
+  
+.navbar ul li {
+    opacity: 100%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+  
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navbar ul li a:hover {
+    background-color: #111;
+}
+
+.accueil {
+    font-family: 'Poppins', sans-serif;
+}
+
+.titrepres {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 5em;
+    font-size: 40px;
+    
+    opacity: 0;
+    transform: translateY(50px);
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.titrepres h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.flower-bg {
+    background: url(../Images/fleurjaunes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50em;
+}
+
+.veilleContent {
+    color: white;
+}
+
+.veilleContent h2 {
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 70%;
+    margin: 5rem auto 0 auto;
+    padding-bottom: 10%;
+}
+
+.text {
+    text-align: center;
+}
+
+.section img {
+    height: 350px;
+}
+
+footer {
+    padding-top: 5%;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+footer .socials{
+    padding-bottom: 2%;
+}
+
+p {
+    opacity: 0;
+    position: relative;
+    bottom: -40px;
+    transition: all 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    bottom: 0;
+}

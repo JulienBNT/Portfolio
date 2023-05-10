@@ -1,0 +1,136 @@
+/*
+     ___________________________
+    /                          /
+   /        * CANVAS *        /
+  /__________________________/
+
+*/
+
+/* #canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+} */
+
+/*
+     ___________________________
+    /                          /
+   /        * NAVBAR *        /
+  /__________________________/
+
+*/
+
+.navbar {
+    z-index: 3;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 0 50px;
+}
+  
+.navbar ul li {
+    opacity: 100%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+  
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navbar ul li a:hover {
+    background-color: #111;
+}
+
+/*
+     ____________________________
+    /                           /
+   /        * Accueil *        /
+  /___________________________/
+
+*/
+
+
+.accueil {
+    background: url(../Images/fleurbleues.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+html {
+    height: 100%
+}
+
+.titleaccueil {
+    text-align: center;
+    color: rgb(105, 162, 181);
+    padding: 0;
+    font-size: 200%;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+
+.titleaccueil h1 {
+    margin-bottom: 0%;
+    margin-right: 5%;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.titleaccueil h2 {
+    margin-top: 0%;
+    margin-left: 5%;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .titleaccueil {
+        font-size: 200%;
+    }
+}

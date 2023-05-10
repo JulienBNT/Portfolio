@@ -1,0 +1,129 @@
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 0 50px;
+}
+  
+.navbar ul li {
+    opacity: 100%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+  
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navbar ul li a:hover {
+    background-color: #111;
+}
+
+.titrepres {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 5em;
+    font-size: 40px;
+    
+    opacity: 0;
+    transform: translateY(50px);
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.titrepres h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.accueil {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flower-bg {
+    background: url(../Images/fleurrouges.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50em;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background: url(../Images/fleursombres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.projet-global {
+    width: 70%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.projet-group {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: 10% 0 10% 0;
+}
+
+.projet {
+
+}
+
+footer {
+    padding-top: 5%;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+footer .socials{
+    padding-bottom: 2%;
+}
+
+@media (max-width: 1200px) {
+    .projet-global {
+        width: 100%;
+    }
+
+    .projet-group {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,175 @@
+.border {
+    width: 30%;
+    margin: 0 auto;
+    padding: 0 30px 10px 30px;
+    border-right: 5px solid #8d2e7e ;
+    border-bottom: 5px solid #8d2e7e;
+    border-left: 5px solid #8d2e7e;
+    border-top: none;
+    border-radius: 3px;
+}
+
+hr {
+    width: 300px;
+    height: 5px;
+    background-color: #8d2e7e;
+    border: none;
+    border-radius: 1em;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 0 50px;
+}
+
+.navbar ul li {
+    opacity: 100%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #111;
+}
+
+
+.accueil {
+    font-family: 'Poppins', sans-serif;
+}
+
+.titrepres {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 5em;
+    font-size: 40px;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.titrepres h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.flower-bg {
+    background: url(../Images/fleurviolettes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50em;
+}
+
+.btssioContent {
+    color: white;
+    box-sizing: border-box;
+}
+
+.btssioContent h2 {
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 0;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 70%;
+    margin: 5rem auto 0 auto;
+    padding-bottom: 10%;
+}
+
+.section img {
+    height: 350px;
+}
+
+.text {
+    margin: 0 5% 0 5%;
+    
+}
+
+.college-bg {
+    background: url(../Images/lycee-jacques-prevert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60em;
+}
+
+.college-text {
+    background-color: #251252;
+    margin: 10% 20% 0 20%;
+    padding: 5% 5% 5% 5%;
+    border-radius: 10px;
+}
+
+footer {
+    padding-top: 5%;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+footer .socials{
+    padding-bottom: 2%;
+}
+
+@media (max-width: 1200px) {
+
+    .section {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    img{
+        height: 100%;
+        margin-bottom: 5%;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+}
